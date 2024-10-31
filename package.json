@@ -1,0 +1,51 @@
+{
+  "name": "nekopdf",
+  "version": "1.0.0",
+  "description": "Markdown to PDF converter. The best way to write Documents. /ᐠ｡ꞈ｡ᐟ\\",
+  "repsitory": "https://github.com/OfficialCRUGG/nekopdf.git",
+  "homepage": "https://github.com/OfficialCRUGG/nekopdf#readme",
+  "author": "OfficialCRUGG <me@crg.sh>",
+  "license": "MIT",
+  "keywords": [
+    "pdf",
+    "markdown",
+    "document",
+    "converter",
+    "cli",
+    "markdown-to-pdf",
+    "markdown-to-html"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "packageManager": "pnpm@7.26.3",
+  "main": "./dist/lib.js",
+  "types": "./dist/lib.d.ts",
+  "bin": {
+    "nekopdf": "./dist/bin.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "generate-demo:default": "node ./dist/bin.js demo/demo.md -h",
+    "generate-demo:basic": "node ./dist/bin.js demo/demo.md -h -t basic --suffix '-basic'",
+    "generate-demo:comicsans": "node ./dist/bin.js demo/demo.md -h -t comicsans --suffix '-comicsans'",
+    "generate-demo": "npm run generate-demo:default && npm run generate-demo:basic && npm run generate-demo:comicsans"
+  },
+  "devDependencies": {
+    "@types/marked": "^4.0.8",
+    "@types/node": "^18.14.0",
+    "rimraf": "^4.1.2",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "commander": "^10.0.0",
+    "highlight.js": "^11.7.0",
+    "marked": "^4.2.12",
+    "marked-katex-extension-ts": "^0.1.2",
+    "puppeteer": "^19.7.2"
+  }
+}
