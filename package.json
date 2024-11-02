@@ -8,7 +8,9 @@
   "version": "2.0.0-canary.1",
   "scripts": {
     "build": "tsup",
-    "watch": "tsup --watch"
+    "watch": "tsup --watch",
+    "release:stable": "npm publish --access public",
+    "release:canary": "npm publish --access public --tag canary"
   },
   "exports": {
     ".": {
