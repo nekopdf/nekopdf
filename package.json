@@ -22,6 +22,10 @@
   },
   "repository": "https://github.com/OfficialCRUGG/nekopdf",
   "author": "OfficialCRUGG <me@crg.sh>",
+  "files": [
+    "dist",
+    "builtin"
+  ],
   "devDependencies": {
     "bun-types": "latest",
     "tsup": "^8.3.5"
