@@ -20,7 +20,7 @@
     }
   },
   "bin": {
-    "ts-lib-starter": "./dist/cli.js"
+    "nekopdf": "./dist/cli.js"
   },
   "repository": "https://github.com/OfficialCRUGG/nekopdf",
   "author": "OfficialCRUGG <me@crg.sh>",
