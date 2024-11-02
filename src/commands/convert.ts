@@ -5,6 +5,7 @@ import { Neko } from "../lib/Neko";
 import fs from "node:fs";
 import task from "tasuku";
 import { loadAdditionalCss } from "../utils/loadAdditionalCss";
+import { Module } from "../lib/markdown";
 
 export const convertCommand = defineCommand(
   {
@@ -52,7 +53,7 @@ export const convertCommand = defineCommand(
         type: String,
         description: "remark/rehype plugins to use",
         alias: "x",
-        default: "",
+        default: "gfm,math,code",
       },
     },
   },
@@ -80,7 +81,7 @@ export const convertCommand = defineCommand(
     neko.injectAdditionalCss([loadAdditionalCss("variables")]);
 
     await task("Rendering markdown", async () => {
-      await neko.renderMarkdown([]);
+      await neko.renderMarkdown(flags.modules.split(",") as Module[]);
     });
 
     neko.assembleHtml();
