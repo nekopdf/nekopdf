@@ -1,16 +1,5 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "strict": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "esModuleInterop": true,
-    "declaration": true,
-    "module": "NodeNext",
-    "moduleResolution": "node",
-    "outDir": "dist",
-    "rootDir": "src"
-  },
-  "exclude": ["node_modules", "dist"],
-  "include": ["./src/**/*.ts"]
+    "esModuleInterop": true
+  }
 }

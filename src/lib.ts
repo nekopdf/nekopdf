@@ -1,2 +1,3 @@
-export * from "./functions";
-export * from "./interfaces";
+export function hello() {
+  console.log("Hello, world!");
+}
