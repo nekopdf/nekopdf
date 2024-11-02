@@ -94,6 +94,11 @@ This is an HTML block:
   <p>This is another paragraph.</p>
 </details>
 
+<div style="background-color: lightblue; padding: 1rem;">
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+</div>
+
 ## Footnotes
 
 This is a footnote[^1]. This is another footnote[^2].
