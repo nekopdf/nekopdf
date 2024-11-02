@@ -1,9 +1,11 @@
 # nekopdf
 
+![nekopdf - The best way to write documents](./.github/assets/header.png)
+
 > [!WARNING]  
 > nekopdf is in pre-release. Several core features are missing or incomplete and bugs are to be expected. It's technically usable, but issues may arise. See [#1](https://github.com/nekopdf/nekopdf/issues/1) for a roadmap until the first stable release.
 
-/ᐠ｡ꞈ｡ᐟ\ CLI to write PDFs using Markdown - The best way to write Documents.
+/ᐠ｡ꞈ｡ᐟ\ CLI to write PDFs using Markdown - The best way to write documents.
 
 ## Installation
 
