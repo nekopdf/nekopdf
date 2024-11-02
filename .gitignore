@@ -170,3 +170,6 @@ dist
 
 # MacOS
 .DS_Store
+
+# nekopdf
+demo/*.pdf
